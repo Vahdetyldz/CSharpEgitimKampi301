@@ -1,9 +1,10 @@
+# Seyahat İstatistik Paneli
 ![Case3 ekran görüntüsü](https://github.com/user-attachments/assets/09747d67-63d8-4f0e-acbf-d40153db02f2)
 
-Seyahat İstatistik Paneli
+
 Bu proje, Entity Framework kullanılarak geliştirilen ve bir seyahat veritabanı ile çalışan bir istatistik panelidir. Windows Forms tabanlı uygulama, kullanıcıya çeşitli istatistikleri görsel olarak anlık şekilde sunmayı amaçlamaktadır. 💻
 
-Projenin Temel Özellikleri
+## **Projenin Temel Özellikleri** 
 Genel Bilgiler:
 Toplam lokasyon sayısı, kapasite, rehber sayısı gibi verilerin hesaplanması.
 İstatistiksel Analizler:
