@@ -11,14 +11,14 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        KampContext context=new KampContext();
+        KampContext context = new KampContext();
         private readonly DbSet<T> _object;
 
         public GenericRepository()
         {
-            _object=context.Set<T>();
+            _object = context.Set<T>();
         }
-        public void Delet(T entity)
+        public void Delete(T entity)
         {
             var deletedEntity = context.Entry(entity);
             deletedEntity.State = EntityState.Deleted;
@@ -37,14 +37,14 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
 
         public void Insert(T entity)
         {
-            var addedEntity= context.Entry(entity);
+            var addedEntity = context.Entry(entity);
             addedEntity.State = EntityState.Added;
             context.SaveChanges();
         }
 
         public void Update(T entity)
         {
-            var updatedEntity= context.Entry(entity);
+            var updatedEntity = context.Entry(entity);
             updatedEntity.State = EntityState.Modified;
             context.SaveChanges();
         }
